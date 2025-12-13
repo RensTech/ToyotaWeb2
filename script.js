@@ -421,7 +421,7 @@ function renderCars(carsByCategory) {
                         <button class="car-btn car-btn-detail" data-car='${JSON.stringify(car).replace(/'/g, "&#39;")}'>
                             <i class="fas fa-eye"></i> Lihat Varian
                         </button>
-                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Adlan,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model)}.%20Mohon%20info%20lebih%20lanjut." target="_blank" class="car-btn car-btn-chat">
+                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Yuni,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model)}.%20Mohon%20info%20lebih%20lanjut." target="_blank" class="car-btn car-btn-chat">
                             <i class="fab fa-whatsapp"></i> Konsultasi
                         </a>
                     </div>
@@ -493,7 +493,7 @@ function openCarModal(car) {
                                     <td>${variant.variant}</td>
                                     <td class="price-cell">${variant.price}</td>
                                     <td class="action-cell">
-                                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Adlan,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model + ' ' + variant.variant)}.%20Mohon%20info%20lebih%20lanjut." 
+                                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Yuni,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model + ' ' + variant.variant)}.%20Mohon%20info%20lebih%20lanjut." 
                                            target="_blank" class="variant-whatsapp-btn">
                                             <i class="fab fa-whatsapp"></i> Chat
                                         </a>
@@ -506,7 +506,7 @@ function openCarModal(car) {
             </div>
             
             <div class="contact-form">
-                <h3><i class="fas fa-headset"></i> Konsultasi Gratis dengan Adlan</h3>
+                <h3><i class="fas fa-headset"></i> Konsultasi Gratis dengan Yuni</h3>
                 <form id="consultation-form">
                     <div class="form-row">
                         <div class="form-group">
@@ -555,9 +555,9 @@ function openCarModal(car) {
                     </button>
                     
                     <p style="margin-top: 15px; font-size: 14px; color: #666;">
-                        Atau langsung hubungi Adlan di WhatsApp: 
-                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Adlan,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model)}.%20Mohon%20info%20lebih%20lanjut." target="_blank">
-                            +62 815-7590-4637
+                        Atau langsung hubungi Yuni di WhatsApp: 
+                        <a href="https://wa.me/6281319800236?text=Halo%20Kak%20Yuni,%20saya%20tertarik%20dengan%20${encodeURIComponent(car.model)}.%20Mohon%20info%20lebih%20lanjut." target="_blank">
+                            +62 813-1980-0236
                         </a>
                     </p>
                 </form>
@@ -576,7 +576,7 @@ function openCarModal(car) {
         const payment = document.querySelector('input[name="payment"]:checked').value;
         
         const variantText = selectedVariant ? ` Varian: ${selectedVariant}` : '';
-        const message = `Halo Kak Adlan, saya ${name} dari ${domicile}. Saya tertarik dengan ${car.model}${variantText}. Saya ingin pembayaran ${payment === 'cash' ? 'cash' : payment === 'credit' ? 'kredit' : 'belum menentukan'}. Mohon info lebih lanjut. Nomor HP: ${phone}`;
+        const message = `Halo Kak Yuni, saya ${name} dari ${domicile}. Saya tertarik dengan ${car.model}${variantText}. Saya ingin pembayaran ${payment === 'cash' ? 'cash' : payment === 'credit' ? 'kredit' : 'belum menentukan'}. Mohon info lebih lanjut. Nomor HP: ${phone}`;
         
         const whatsappUrl = `https://wa.me/6281319800236?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
@@ -897,7 +897,7 @@ function initSEO() {
     // Tambahkan meta description dinamis jika diperlukan
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-        metaDescription.content = "Adlan - Sales Resmi Toyota Veteran Bintaro Jakarta Selatan. Promo mobil Toyota Fortuner, Avanza, Veloz, Innova. Hubungi +62 815-7590-4637";
+        metaDescription.content = "Yuni - Sales Resmi Toyota Veteran Bintaro Jakarta Selatan. Promo mobil Toyota Fortuner, Avanza, Veloz, Innova. Hubungi +62 813-1980-0236";
     }
     
     // Update page title dengan nama model jika di modal detail
